@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏋️‍♂️ Fitness Tracker</h1>
+
+    <form id="fitness-form">
+      <input type="text" id="activity" placeholder="Activity (e.g. Running)" required />
+      <input type="number" id="duration" placeholder="Duration (mins)" required />
+      <input type="number" id="calories" placeholder="Calories burned" required />
+      <input type="number" id="steps" placeholder="Steps (optional)" />
+      <button type="submit">➕ Add Entry</button>
+    </form>
+
+    <div class="summary">
+      <h2>📅 Today's Summary</h2>
+      <p>⏱️ Time: <span id="today-time">0</span> mins</p>
+      <p>🔥 Calories: <span id="today-calories">0</span> kcal</p>
+      <p>👣 Steps: <span id="today-steps">0</span></p>
+    </div>
+
+    <div class="summary">
+      <h2>📊 Weekly Summary (7 Days)</h2>
+      <p>⏱️ Time: <span id="week-time">0</span> mins</p>
+      <p>🔥 Calories: <span id="week-calories">0</span> kcal</p>
+      <p>👣 Steps: <span id="week-steps">0</span></p>
+    </div>
+
+    <button class="reset-btn" onclick="resetData()">🗑️ Reset All Data</button>
+
+    <div class="progress">
+      <h2>📈 Progress</h2>
+      <div class="bar">
+        <label>Time</label>
+        <div class="progress-bar" id="time-bar"></div>
+      </div>
+      <div class="bar">
+        <label>Calories</label>
+        <div class="progress-bar" id="calories-bar"></div>
+      </div>
+      <div class="bar">
+        <label>Steps</label>
+        <div class="progress-bar" id="steps-bar"></div>
+      </div>
+    </div>
+
+    <div class="log">
+      <h2>📝 Activity Log</h2>
+      <ul id="log-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: #1e2a38;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #00adb5;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #007f86;
+}
+
+.summary, .log, .progress {
+  background: #243447;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #b00020;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #7b0015;
+}
+
+ul li {
+  margin-bottom: 8px;
+  list-style: none;
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+  font-size: 14px;
+}
+
+.bar {
+  margin: 12px 0;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.progress-bar {
+  height: 12px;
+  background-color: #00adb5;
+  border-radius: 8px;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
