@@ -1,6 +1,6 @@
 # 🏋️ Fitness Tracker App
 
-This is a modern, fully responsive **Fitness Tracker Web App** built as part of the [CodeAlpha App Development Internship](https://www.codealpha.tech/).
+This is a modern, fully responsive **Fitness Tracker Web App**.
 
 It allows users to log their daily fitness activities like workouts, steps, calories, and track weekly progress with visual summaries — all powered by local storage and a clean UI.
 
@@ -28,7 +28,7 @@ It allows users to log their daily fitness activities like workouts, steps, calo
 
 ## 📁 Folder Structure
 
-CodeAlpha_FitnessTrackerApp/<br>
+FitnessTrackerApp/<br>
 ├── index.html<br>
 ├── style.css<br>
 ├── script.js<br>
